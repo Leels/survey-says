@@ -1,13 +1,120 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Calculator</title>
+    <title>Survey Says</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery.js"></script>
     <script src="js/scripts.js"></script>
   </head>
   <body>
+    <div class="container">
+      <h1>Beaverton Bakery</h1>
+      <h3>Cake Order Form</h3>
+      <form class="survey">
+        <div>
+          <label for="name">Your name:</label>
+          <input id="name" type="text">
+        </div>
+        <div>
+          <label>Email:
+          <input type="email" name="" value="">
+          </label>
+        </div>
+        <div>
+          <label>Telephone:
+          <input type="tel" name="" value="">
+          </label>
+        </div>
+        <div>
+          <label for="start">Pick-up date:</label>
+          <input type="date" id="start" name="trip-start">
+         </div>
+         <div>
+           <label for="beverage">Icing type:</label>
+             <select id="beverage">
+               <option value="1">Butter Cream</option>
+               <option value="2">Cream Cheese Frosting</option>
+               <option value="3">Meringue</option>
+               <option value="4">Fondant</option>
+             </select>
+             </div>
+        <div class="form-group">
+          <label for="color">Icing color:</label>
+          <input id="color" class="" type="color" >
+        </div>
+        <div class="">
+          <label>Upload image for cake topping:
+          <input type="file" name="" value="">
+          </label>
+        </div>
+        <div>
+        <h5 for="icecream">Cake type:</h5>
+          <div class="radio">
+            <label>
+              <input type="radio" name="flavor" value="chocolate" checked>
+              Chocolate
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="flavor" value="vanilla">
+              White
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="flavor" value="cookiesandcream">
+              Red Velvet
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="flavor" value="cookiesandcream">
+              Lemon
+            </label>
+            <div class="radio">
+            <label>
+              <input type="radio" name="flavor" value="cookiesandcream">
+              Carrot
+            </label>
+            </div>
+          </div>
+          <div>
+          <h5 for="icecream">Cake filling:</h5>
+            <div class="radio">
+              <label>
+                <input type="radio" name="flavor" value="chocolate" checked>
+                Rasberry
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="flavor" value="vanilla">
+                Lemon
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="flavor" value="cookiesandcream">
+                Butter Cream
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="flavor" value="cookiesandcream">
+                Double Chocolate
+              </label>
+              <div class="radio">
+              <label>
+                <input type="radio" name="flavor" value="cookiesandcream">
+                Cream Cheese
+              </label>
+              </div>
+            </div>
+      </form>
+    </div>
+
 
   </body>
 </html>
