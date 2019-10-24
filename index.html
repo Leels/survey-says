@@ -18,102 +18,105 @@
         </div>
         <div>
           <label>Email:
-          <input type="email" name="" value="">
+          <input id="email" type="email">
           </label>
         </div>
         <div>
           <label>Telephone:
-          <input type="tel" name="" value="">
+          <input id="tel" type="tel">
           </label>
         </div>
         <div>
-          <label for="start">Pick-up date:</label>
-          <input type="date" id="start" name="trip-start">
+          <label for="date">Pick-up date:</label>
+          <input type="date" id="date">
          </div>
          <div>
            <label for="icing">Icing type:</label>
              <select id="icing">
                <option value="1">Butter Cream</option>
-               <option value="2">Cream Cheese Frosting</option>
-               <option value="3">Meringue</option>
-               <option value="4">Fondant</option>
+               <option value="2">Double Chocolate</option>
+               <option value="3">Cream Cheese Frosting</option>
+               <option value="4">Meringue</option>
+               <option value="5">Fondant</option>
              </select>
              </div>
         <div class="form-group">
           <label for="color">Icing color:</label>
-          <input id="color" class="" type="color" >
-        </div>
-        <div class="">
-          <label>Upload image for cake topping:
-          <input type="file" name="" value="">
-          </label>
+          <input id="color" class="form-control" type="color">
         </div>
         <div>
-        <h5 for="icecream">Cake type:</h5>
+          <label>Upload image for cake topping:</label>
+          <input id="image" type="file">
+        </div>
+        <div class="form-group">
+        <label id="cake">Cake type:</label>
           <div class="radio">
             <label>
-              <input type="radio" name="flavor" value="chocolate" checked>
+              <input type="radio" name="type" value="chocolate">
               Chocolate
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="flavor" value="vanilla">
+              <input type="radio" name="type" value="white">
               White
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="flavor" value="cookiesandcream">
+              <input type="radio" name="type" value="red-velvet">
               Red Velvet
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="flavor" value="cookiesandcream">
+              <input type="radio" name="type" value="lemon">
               Lemon
             </label>
             <div class="radio">
             <label>
-              <input type="radio" name="flavor" value="cookiesandcream">
-              Carrot
+              <input type="radio" name="type" value="carrot">
+              Carrot Cake
             </label>
             </div>
           </div>
-          <div>
-          <h5 for="icecream">Cake filling:</h5>
+        </div>
+          <div class="form-group">
+          <label id="filling">Cake filling:</label>
             <div class="radio">
               <label>
-                <input type="radio" name="flavor" value="chocolate" checked>
+                <input type="radio" name="flavor" value="rasberry">
                 Rasberry
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="flavor" value="vanilla">
+                <input type="radio" name="flavor" value="lemon">
                 Lemon
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="flavor" value="cookiesandcream">
+                <input type="radio" name="flavor" value="butter-cream">
                 Butter Cream
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="flavor" value="cookiesandcream">
+                <input type="radio" name="flavor" value="chocolate">
                 Double Chocolate
               </label>
               <div class="radio">
               <label>
-                <input type="radio" name="flavor" value="cookiesandcream">
+                <input type="radio" name="flavor" value="creamcheese">
                 Cream Cheese
               </label>
               </div>
             </div>
+            <button type="submit" class="btn-default">Place Order</button>
       </form>
-      <div class="complete-order">
+      <div id="complete-order">
+        <h4>Your Order:</h4>
         <p>
           Customer name: <span class="name"></span>
         </p>
